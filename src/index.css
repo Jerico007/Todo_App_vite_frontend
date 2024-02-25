@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Lines&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 101vh;
+  scroll-behavior: smooth;
+ 
+}
+
+body::-webkit-scrollbar{
+ display: none;
+}

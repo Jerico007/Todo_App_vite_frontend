@@ -1,0 +1,142 @@
+:root {
+  --color: #1c1e1cd9;
+  --black:black;
+  --white:white;
+}
+.TodoCard {
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  border-radius: 28px;
+}
+
+.TodoCard > input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px var(--black);
+  font-family: "Poppins", sans-serif;
+}
+
+.TodoCard > textarea {
+  resize: none;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  height: 11vh;
+  padding: 0.6rem;
+  outline: none;
+  box-shadow: 0px 4px 6px var(--black);
+  width: 100%;
+}
+.TodoCard > textarea::-webkit-scrollbar{
+  display: none;
+}
+.Heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: monospace;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.Content {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.Heading,
+.Content {
+  color: var(--color);
+}
+.Buttons {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.Buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px var(--black);
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ConfirmDelete {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 4px 6px var(--black);
+  font-family: monospace;
+  padding: 1rem;
+  gap: 1vh;
+}
+
+.ConfirmDelete p,
+button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color);
+}
+
+.ConfirmDelete .Confirm-buttons {
+  display: flex;
+  gap: 1vw;
+}
+
+.Confirm-buttons button {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: monospace;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px var(--black);
+  cursor: pointer;
+}
+
+.Buttons > div:nth-child(3) {
+  position: relative;
+}
+
+.todo-color-picker {
+  display: flex;
+  gap: 1vw;
+  padding: 1rem;
+  background-color: var(--white);
+  box-shadow: 0px 4px 6px var(--black);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+  left: -215%;
+  bottom: 130%;
+}
+.todo-color-picker div {
+  height: 20px;
+  cursor: pointer;
+  width: 20px;
+  border-radius: 50px;
+  border: 1px solid var(--black);
+}
+
+.todo-color-picker div:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in;
+}

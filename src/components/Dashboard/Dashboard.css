@@ -1,0 +1,29 @@
+:root {
+  --white: white;
+}
+
+.Dashboard {
+  height: 100vh;
+  
+  background-color: var(--red);
+}
+
+.Dashboard-heading {
+  color: var(--white);
+  text-align: center;
+  font-family: "Rubik Lines", system-ui;
+}
+
+.Todo-Lists {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 1vh;
+  padding: 1rem;
+}
+
+.NoData {
+  color: var(--white);
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+}
