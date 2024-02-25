@@ -40,7 +40,7 @@ export const readTodo = (page, prevTodos) => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.get(
-        `http://localhost:5000/readtodo/${page}`,
+        `https://my-todos-0fxd.onrender.com/readtodo/${page}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -81,7 +81,7 @@ export const updateTodo = (updatedData, todoId) => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        `http://localhost:5000/updatetodo`,
+        `https://my-todos-0fxd.onrender.com/updatetodo`,
         { updatedData: updatedData, todoId: todoId },
         {
           headers:{
@@ -105,7 +105,7 @@ export const deleteTodo = (todoId) => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        `http://localhost:5000/deletetodo`,
+        `https://my-todos-0fxd.onrender.com/deletetodo`,
        
         {
           todoId: todoId,
