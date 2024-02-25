@@ -39,7 +39,7 @@ const SignUpLogIn = () => {
   async function SignUp() {
     try {
       const response = await axios.post(
-        `http://localhost:5000/signup`,
+        `https://my-todos-0fxd.onrender.com/signup`,
         {
           name: formDetails.name,
           email: formDetails.email,
@@ -68,7 +68,7 @@ const SignUpLogIn = () => {
   async function LogIn() {
     try {
       const response = await axios.post(
-        `http://localhost:5000/login`,
+        `https://my-todos-0fxd.onrender.com/login`,
         {
           loginId: formDetails.loginId,
           password: formDetails.password,
